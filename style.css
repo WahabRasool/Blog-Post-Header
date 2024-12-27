@@ -1,0 +1,126 @@
+body{
+    font-family: "Montserrat", serif;
+    margin:0;
+    display:flex;
+    flex-direction:column;
+    align-items:center
+  }
+  #head{
+    position:relative;
+    background: url('https://images.unsplash.com/photo-1633545495735-25df17fb9f31?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzQ5OTgwMTd8&ixlib=rb-4.0.3&q=85') top center no-repeat;
+    background-size:fixed;
+    color:#334;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+    padding:3em 1em;
+    box-shadow:0 2px  0 #4041; 
+    z-index:2;
+    width:100%;
+    height: 100vh;
+    box-sizing:border-box;
+    margin:auto; 
+    &:after{
+      display:block;
+      content:'';
+      background:#fffa;
+      position:absolute;
+      inset:0;
+      z-index:-1;
+      backdrop-filter: brightness(2) blur(15px);
+      height: 100vh;
+    }
+    img{
+      border-radius:12px;
+      box-shadow:-10px 10px 10px #6366;
+      object-fit:cover
+    }
+    .featured{
+      max-width:40vw;
+      width:100%
+    }
+    .info{
+       max-width:500px;
+    }
+    h1{
+      font-size:3em;
+      font-weight:800
+    }
+    .tag{
+      margin-top:2em;
+      display:block;
+      color:#404;
+      text-decoration:none;
+      font-weight:600
+      
+    }
+    .meta{
+      display:flex;
+      gap:10px;
+      align-items:center;
+      justify-content:space-between;
+     
+      b{
+        display:flex;
+        align-items:center;
+        gap:5px;
+      }
+      img{
+        width:50px;
+        height:50px;
+        object-fit:cover;
+        border-radius:50%
+      }
+    }
+    .social{
+      display:flex;
+      margin:2em 0;
+      gap:1em;
+      a{
+        width:50px;
+        height:50px;
+        background:#fff;
+        border-radius:50%;
+        box-shadow:6px 6px 6px #4041;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        &:hover{
+          scale:1.1;
+          box-shadow:6px 6px 6px #4043;
+        }
+      }
+      svg{
+        width:70%;
+        height:70%;
+        path{
+          fill:#434
+        }
+      }
+    }
+  }
+  
+  #post{
+    display:flex;
+    gap:10px;
+    padding:2em;
+    color:#404;
+    max-width:1200px;
+    margin:10px auto;
+    .content{
+      padding-top:1.4em
+    }
+    .side{
+      min-width:30%;
+      li{
+        padding:.3em 0;
+        font-size:.9em;
+        font-weight:500;
+        &:hover{
+          text-decoration:underline;
+          cursor:pointer
+        }
+      }
+    }
+  }
